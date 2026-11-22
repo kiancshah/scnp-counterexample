@@ -1,0 +1,30 @@
+S_4: 1 bad pairs, 1 of them Boolean
+   (b) bad Boolean pairs whose atom graph has no cycle: 0
+   bad Boolean pairs by rank: 4: 1
+   213 pairs u <= w, 4 of them contain a bad Boolean pair
+   (a) bad pairs containing no bad Boolean pair: 0
+   good pairs containing a bad Boolean pair (the converse of (a) fails): 3
+S_5: 77 bad pairs, 41 of them Boolean
+   (b) bad Boolean pairs whose atom graph has no cycle: 0
+   bad Boolean pairs by rank: 4: 17, 5: 24
+   3781 pairs u <= w, 322 of them contain a bad Boolean pair
+   (a) bad pairs containing no bad Boolean pair: 0
+   good pairs containing a bad Boolean pair (the converse of (a) fails): 245
+S_6: 5132 bad pairs, 1427 of them Boolean
+   (b) bad Boolean pairs whose atom graph has no cycle: 0
+   bad Boolean pairs by rank: 4: 220, 5: 639, 6: 534, 7: 34
+   98407 pairs u <= w, 20646 of them contain a bad Boolean pair
+   (a) bad pairs containing no bad Boolean pair: 0
+   good pairs containing a bad Boolean pair (the converse of (a) fails): 15514
+S_7: 364214 bad pairs, 51826 of them Boolean
+   (b) bad Boolean pairs whose atom graph has no cycle: 0
+   bad Boolean pairs by rank: 4: 2692, 5: 12092, 6: 20518, 7: 14168, 8: 2292, 9: 64
+   3550919 pairs u <= w, 1327922 of them contain a bad Boolean pair
+   (a) bad pairs containing no bad Boolean pair: 0
+   good pairs containing a bad Boolean pair (the converse of (a) fails): 963708
+S_8: 29131995 bad pairs, 2077705 of them Boolean
+   (b) bad Boolean pairs whose atom graph has no cycle: 0
+   bad Boolean pairs by rank: 4: 33308, 5: 205716, 6: 533144, 7: 707888, 8: 466830, 9: 120456, 10: 10194, 11: 168, 12: 1
+   170288585 pairs u <= w, 92736328 of them contain a bad Boolean pair
+   (a) bad pairs containing no bad Boolean pair: 0
+   good pairs containing a bad Boolean pair (the converse of (a) fails): 63604333
