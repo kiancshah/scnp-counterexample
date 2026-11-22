@@ -1,0 +1,128 @@
+{
+ "4": {
+  "n": 4,
+  "perms": 24,
+  "avoid_4231": 23,
+  "contain_4231": 1,
+  "bad_avoiding_4231": 0,
+  "bad_tops_all": 1,
+  "witness": {
+   "contain_4231": 1,
+   "full_passes": 0,
+   "contain_4231_not_bad": 0
+  },
+  "pairs_w_avoid_4231": 193,
+  "bad_pairs_w_avoid_4231": 0,
+  "pairs_both_avoid": 174,
+  "bad_pairs_both_avoid": 0,
+  "edges": 338
+ },
+ "5": {
+  "n": 5,
+  "perms": 120,
+  "avoid_4231": 103,
+  "contain_4231": 17,
+  "bad_avoiding_4231": 0,
+  "bad_tops_all": 17,
+  "witness": {
+   "contain_4231": 17,
+   "full_passes": 0,
+   "contain_4231_not_bad": 0
+  },
+  "pairs_w_avoid_4231": 2713,
+  "bad_pairs_w_avoid_4231": 0,
+  "pairs_both_avoid": 1898,
+  "bad_pairs_both_avoid": 0,
+  "edges": 7350
+ },
+ "6": {
+  "n": 6,
+  "perms": 720,
+  "avoid_4231": 513,
+  "contain_4231": 207,
+  "bad_avoiding_4231": 1,
+  "bad_tops_all": 208,
+  "witness": {
+   "contain_4231": 207,
+   "full_passes": 0,
+   "contain_4231_not_bad": 0
+  },
+  "pairs_w_avoid_4231": 48855,
+  "bad_pairs_w_avoid_4231": 1,
+  "pairs_both_avoid": 22729,
+  "bad_pairs_both_avoid": 0,
+  "edges": 185798
+ },
+ "7": {
+  "n": 7,
+  "perms": 5040,
+  "avoid_4231": 2762,
+  "contain_4231": 2278,
+  "bad_avoiding_4231": 25,
+  "bad_tops_all": 2303,
+  "witness": {
+   "contain_4231": 2278,
+   "full_passes": 0,
+   "contain_4231_not_bad": 0
+  },
+  "pairs_w_avoid_4231": 1075951,
+  "bad_pairs_w_avoid_4231": 125,
+  "pairs_both_avoid": 287977,
+  "bad_pairs_both_avoid": 0,
+  "edges": 5399716
+ },
+ "8": {
+  "n": 8,
+  "perms": 40320,
+  "avoid_4231": 15793,
+  "contain_4231": 24527,
+  "bad_avoiding_4231": 378,
+  "bad_tops_all": 24905,
+  "witness": {
+   "contain_4231": 24527,
+   "full_passes": 0,
+   "contain_4231_not_bad": 0
+  },
+  "pairs_w_avoid_4231": 28085137,
+  "bad_pairs_w_avoid_4231": 10393,
+  "pairs_both_avoid": 3788754,
+  "bad_pairs_both_avoid": 0,
+  "edges": 178150664
+ },
+ "9": {
+  "n": 9,
+  "perms": 362880,
+  "avoid_4231": 94776,
+  "contain_4231": 268104,
+  "bad_avoiding_4231": 4537,
+  "bad_tops_all": 272641,
+  "witness": {
+   "contain_4231": 268104,
+   "full_passes": 0,
+   "contain_4231_not_bad": 0
+  },
+  "pairs_w_avoid_4231": 849244673,
+  "bad_pairs_w_avoid_4231": 747132,
+  "pairs_both_avoid": 51222040,
+  "bad_pairs_both_avoid": 0,
+  "edges": 6595607872
+ },
+ "10": {
+  "n": 10,
+  "perms": 3628800,
+  "avoid_4231": 591950,
+  "contain_4231": 3036850,
+  "bad_avoiding_4231": 47863,
+  "bad_tops_all": null,
+  "witness": {
+   "contain_4231": 3036850,
+   "full_passes": 0,
+   "contain_4231_not_bad": 0
+  },
+  "pairs_w_avoid_4231": 29232843787,
+  "bad_pairs_w_avoid_4231": 51035522,
+  "pairs_both_avoid": 707118140,
+  "bad_pairs_both_avoid": 0,
+  "edges": 271254739499
+ }
+}
