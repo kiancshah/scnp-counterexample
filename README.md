@@ -32,6 +32,7 @@ with both positions inside the window. SCNP holds exactly when some chain has th
     python3 counterexample.py      # everything about 214365 <= 541632, about 10 seconds
     python3 verify_small.py        # all small checks, about 2 minutes
     python3 spiral.py              # the cyclic orders and the missing rotations
+    python3 boolean_intervals.py 4 5 6 7   # bad Boolean intervals and loops, a few seconds
 
 `figures.py` needs `matplotlib`:
 
@@ -46,19 +47,21 @@ with both positions inside the window. SCNP holds exactly when some chain has th
 | `python/construction.py` | the explicit bottom `u` for a top `w` containing `4231` |
 | `python/counterexample.py` | the two chains `X`, `Y`, the six window bounds, and the full enumeration of 2688 chains |
 | `python/spiral.py` | atoms, atom graph, competing chains as rotations of one cyclic order |
+| `python/boolean_intervals.py` | every bad pair contains a bad Boolean pair, and every bad Boolean pair has a loop in its atom graph (`n <= 8`) |
 | `python/figures.py` | the figures of the paper |
 | `python/verify_small.py` | reruns every statement that fits in a few minutes |
 | `c/sweep/` | fast C program: decides every pair of `S_n`, `n <= 10`, bottom by bottom (`make`, then `./scnp`) |
 | `c/tops/` | second, independent C program: decides every pair below a given top, `n <= 11` |
 | `data/sweep/` | output of the complete sweeps, `n <= 10` |
 | `data/tops/` | output of the top-by-top runs, `n <= 11`, and of the partial run at `n = 12` |
+| `data/boolean/` | output of `python/boolean_intervals.py`, `n <= 8` |
 | `figures/` | the figures as PDF and PNG |
 | `RESULTS.md` | all numbers, with the command that produces each of them |
 
 ## The two C programs
 
     cd c/sweep && make && ./scnp pair 214365 541632
-    ./scnp sweep -n 8 -o runs/s8 --list none && ./scnp patterns runs/s8
+    mkdir -p runs && ./scnp sweep -n 8 -o runs/s8 --list none && ./scnp patterns runs/s8
 
     cd c/tops && make -C fast && fast/scnp_fast top 541632 -v
 

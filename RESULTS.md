@@ -15,7 +15,7 @@
 | 10 | 811 107 567 659 | 281 859 859 053 | 3 084 713 | 3 036 850 | 47 863 |
 | 11 | | | 36 559 185 | 36 092 688 | 466 497 |
 
-* `n <= 10`: every pair decided. `cd c/sweep && ./scnp sweep -n N -o runs/sN --list none && ./scnp patterns runs/sN`.
+* `n <= 10`: every pair decided. `cd c/sweep && mkdir -p runs && ./scnp sweep -n N -o runs/sN --list none && ./scnp patterns runs/sN`.
   Outputs in `data/sweep/summary_S*.txt`, `data/sweep/patterns_S*.txt`, `data/sweep/badw_S10.bin.gz`.
   Time on 4 cores: 2 s for `n = 8`, 1.5 min for `n = 9`, 2.5 h for `n = 10`.
 * `n = 11`: every pair whose top avoids 4231 decided (1 129 772 239 859 pairs, 3 461 289 736 bad), with `c/tops`.
@@ -47,6 +47,24 @@ Each line: `cd c/sweep && ./scnp pair U W` (brute force over all chains; the lin
 * The explicit bottom of `python/construction.py` gives a bad pair for every `w` containing 4231, `n <= 8`.
 * If `Inv(u)` is contained in `Inv(w)`, the pair is good and the least vector is `inv_W(w) - inv_W(u)` (`n <= 7`).
 
+## Boolean intervals and loops
+
+`[u, w]` is Boolean if it is isomorphic to the lattice of subsets of its atoms. The atom graph has the positions as
+vertices and one edge `{a, b}` for every atom `u t_ab`.
+
+| n | bad pairs | bad pairs with a Boolean interval | of these, atom graph without a cycle | bad pairs containing no bad Boolean pair |
+|---|---:|---:|---:|---:|
+| 4 | 1 | 1 | 0 | 0 |
+| 5 | 77 | 41 | 0 | 0 |
+| 6 | 5 132 | 1 427 | 0 | 0 |
+| 7 | 364 214 | 51 826 | 0 | 0 |
+| 8 | 29 131 995 | 2 077 705 | 0 | 0 |
+
+So for `n <= 8` every bad Boolean pair has a loop in its atom graph, and every bad pair contains a bad Boolean pair.
+The converse of the second statement fails: 63 604 333 good pairs of `S_8` contain a bad Boolean pair.
+`cd python && python3 boolean_intervals.py 4 5 6 7 8` (the header of the file says how to make the input for `n = 8`).
+Output in `data/boolean/boolean_intervals_S4_to_S8.txt`.
+
 ## Beyond n = 11 (partial)
 
 * `n = 12`: every `w` containing one of the eight is bad (all 457 889 412 of them); every `w` avoiding the eight with
@@ -60,5 +78,5 @@ Each line: `cd c/sweep && ./scnp pair U W` (brute force over all chains; the lin
 * The window criterion against expansion of every chain: all pairs of `S_n`, `n <= 6` (`./scnp check -n 6`), and all
   pairs of `S_4`, `S_5` in Python.
 * `c/sweep` and `c/tops` agree on every `w` in `S_10` that avoids 4231 (591 950 permutations).
-* A further independent implementation reproduced the table above for `n <= 8`, the numbers for `214365 <= 541632`,
-  and the badness and minimality of the four permutations of size 10.
+* A further independent implementation reproduced the table above for `n <= 9`, the numbers for `214365 <= 541632`,
+  the table of the eight minimal bad permutations, and their minimality.
