@@ -1,0 +1,10 @@
+# S_9: bad w = some u <= w with D_u^w not SCNP
+# patterns: 4231,541632,5276143,5472163
+permutations                        362880
+bad w                               272641
+w containing 4231                   268104
+w containing one of the patterns    272641
+w avoiding all patterns             90239
+bad w avoiding all patterns         0   (bad_avoiding_patterns.txt)
+w with a pattern but not bad        0   (pattern_but_not_bad.txt)
+# result: bad w == w containing one of the patterns
